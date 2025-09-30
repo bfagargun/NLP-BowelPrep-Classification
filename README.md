@@ -46,7 +46,7 @@ The workflow combines **TF–IDF features + Logistic Regression** with simple
 
 ---
 
-## Usage
+## Usage with your own dataset
 
 1. Clone this repository:
    ```bash
@@ -56,6 +56,10 @@ The workflow combines **TF–IDF features + Logistic Regression** with simple
 2. Install requirements:
    ```bash
    pip install -r requirements.txt
+   ```
+3. Open the notebook:
+   ```bash
+   notebook/ADR_cleanliness_pipeline.ipynb
    ```
 3. Adjust file paths in the notebook:
    ```bash
@@ -67,11 +71,14 @@ The workflow combines **TF–IDF features + Logistic Regression** with simple
 ## Repository Structure
 ```bash
 .
+├── train_study_model.py                 # study model training
+├── apply_study_rules.py                 # study inference + rules
 ├── notebook/
-│   └── ADR_cleanliness_pipeline.ipynb   # main pipeline
+│   └── ADR_cleanliness_pipeline.ipynb   # step-by-step tutorial
 ├── examples/
 │   └── dummy_training.xlsx              # toy dataset (Turkish free-text, no PHI)
 ├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 ## License
