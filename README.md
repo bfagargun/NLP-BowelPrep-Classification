@@ -123,6 +123,7 @@ This reproduces the study-reported training metrics and the final class counts.
 .
 ├── train_study_model.py                 # study model training
 ├── apply_study_rules.py                 # study inference + rules
+├── rule_based_extraction.py             # rule-based heuristics for procedural variables
 ├── notebook/
 │   └── ADR_cleanliness_pipeline.ipynb   # step-by-step tutorial
 ├── examples/
