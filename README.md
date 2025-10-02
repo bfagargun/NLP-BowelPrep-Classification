@@ -164,6 +164,9 @@ UEG Week 2025, Berlin.
 
 ## Contact
 
-Besim Fazıl Ağargün, MD Istanbul University, Istanbul Faculty of Medicine, Gastroenterology
+Besim Fazıl Ağargün, MD  
+Istanbul University, Istanbul Faculty of Medicine, Division of Gastroenterology  
+bfagargun [at] istanbul.edu.tr  
+ORCID: [0000-0002-3933-1881](https://orcid.org/0000-0002-3933-1881)
 
 ---
