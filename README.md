@@ -6,6 +6,10 @@ Reproducible **NLP pipeline** to classify colonoscopy reports into
 The workflow combines **TF–IDF features + Logistic Regression** with simple  
 **rule-based overrides**, and was validated on >11,000 **Turkish free-text colonoscopy reports**.
 
+> **This repository accompanies our Late-Breaking Abstract presented at UEG Week 2025 (Berlin):**  
+> *“Natural Language Processing–Based Classification of Bowel Preparation Quality and Its Association with Adenoma Detection in >11,000 Colonoscopy Reports: A Real-World Analysis.”*  
+> **Authors:** Besim Fazıl Ağargün, Sezen Genç Uluçeçen, Gizem Dağcı, Mehmet Akif Yağlı, et al.
+
 ---
 
 ## How it Works
@@ -140,21 +144,21 @@ The example texts are synthetic Turkish free-text colonoscopy reports.
 
 ## Citation
 
-If you use this repository in your research, please cite as:
+If you use this repository in your research, please cite:
 
-Besim Fazıl Ağargün. *NLP-BowelPrep-Classification: Reproducible NLP pipeline for bowel preparation quality in colonoscopy reports.*  
-GitHub repository: https://github.com/bfagargun/NLP-BowelPrep-Classification
+**Ağargün BF, Genç Uluçeçen S, Dağcı G, Yağlı MA, et al.**  
+*Natural Language Processing–Based Classification of Bowel Preparation Quality and Its Association with Adenoma Detection in >11,000 Colonoscopy Reports: A Late-Breaking Real-World Analysis.*  
+UEG Week 2025, Berlin.
 
 ### Example BibTeX
 
 ```bibtex
-@misc{Agargun2025BowelPrep,
-  author       = {Ağargün, Besim Fazıl},
-  title        = {NLP-BowelPrep-Classification: Reproducible NLP pipeline for bowel preparation quality in colonoscopy reports},
-  year         = {2025},
-  publisher    = {GitHub},
-  journal      = {GitHub repository},
-  howpublished = {\url{https://github.com/bfagargun/NLP-BowelPrep-Classification}}
+@inproceedings{Agargun2025UEG,
+  author    = {Ağargün, Besim Fazıl and Genç Uluçeçen, Sezen and Dağcı, Gizem and Yağlı, Mehmet Akif and et al.},
+  title     = {Natural Language Processing--Based Classification of Bowel Preparation Quality and Its Association with Adenoma Detection in >11,000 Colonoscopy Reports: A Late-Breaking Real-World Analysis},
+  booktitle = {UEG Week 2025, Berlin},
+  year      = {2025},
+  note      = {Late-Breaking Abstract}
 }
 ```
 
