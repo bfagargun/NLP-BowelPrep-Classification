@@ -68,6 +68,32 @@ The workflow combines **TF–IDF features + Logistic Regression** with simple
    ```
 4. Run the notebook: the model is trained, evaluated, and applied to all reports.
 
+## Rule-Based NLP Heuristics (Procedural Variables)
+
+In addition to the ML-based bowel preparation classifier, we extract key **procedural variables** from free-text colonoscopy reports using **rule-based NLP**:
+
+- **Cecal intubation** (yes/no)
+- **Ileal intubation** (yes/no)
+- **Polyp presence** (yes/no), **polyp count** (best-effort)
+- **Largest polyp size (mm)** and **size bucket**: `<5 mm`, `5–9 mm`, `≥10 mm`
+- **Polyp locations**: cecum, right, transverse, left, sigmoid, rectum, rectosigmoid, ileum, multifocal
+- **Polypectomy method**: biopsy forceps, cold snare, hot snare, EMR, ESD, not removed
+- **Post-polypectomy bleeding**: 0=no, 1=suspected, 2=present
+- **Hemoclip applied**: yes/no
+
+The implementation lives in `rule_based_extraction.py` and is designed to be **transparent and deterministic**. It supports Turkish and English phrasing and normalizes common diacritics/spelling variants.
+
+### Quick Start
+
+```bash
+# 1) Create features from free-text reports (BULGULAR column)
+python rule_based_extraction.py   --input path/to/reports.xlsx   --text-col "BULGULAR"   --out path/to/reports_with_procedural_vars.csv
+```
+
+### Validation Note
+These rule-based outputs are not validated via cross-validation like the ML classifier. For auditability, we recommend a **spot-check on a random subset** (e.g., 100 reports) and reporting precision/recall against a human-annotated reference.
+
+
 ## Reproducing study results
 
 For transparency, we also provide the exact code used in the study:
