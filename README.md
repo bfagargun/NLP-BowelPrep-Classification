@@ -68,6 +68,30 @@ The workflow combines **TF–IDF features + Logistic Regression** with simple
    ```
 4. Run the notebook: the model is trained, evaluated, and applied to all reports.
 
+## Reproducing study results
+
+For transparency, we also provide the exact code used in the study:
+Train the study model
+   ```bash
+python train_study_model.py \
+  --train "C:\Users\...\ADR.v2.xlsx" \
+  --text-col "temizlik ifadesi" \
+  --label-col "temizlik sinifi iyi, orta, kötü" \
+  --out-model "C:\Users\...\colon_cleanliness_model.pkl"
+   ```
+Apply the study inference (segment +100, rules on segment, keep 'orta')
+   ```bash
+python apply_study_rules.py \
+  --model   "C:\Users\...\colon_cleanliness_model.pkl" \
+  --predict "C:\Users\...\tum_hastalar_with_bulgular_v2.xlsx" \
+  --output  "C:\Users\...\adr.v3.xlsx" \
+  --train   "C:\Users\...\ADR.v2.xlsx" \
+  --train-text-col "temizlik ifadesi" \
+  --train-label-col "temizlik sinifi iyi, orta, kötü" \
+  --full-text-col "BULGULAR"
+   ```
+This reproduces the study-reported training metrics and the final class counts.
+
 ## Repository Structure
 ```bash
 .
