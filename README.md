@@ -6,7 +6,7 @@ Reproducible **NLP pipeline** to classify colonoscopy reports into
 The workflow combines **TF–IDF features + Logistic Regression** with simple  
 **rule-based overrides**, and was validated on >11,000 **Turkish free-text colonoscopy reports**.
 
-> **This repository accompanies our Late-Breaking Abstract presented at UEG Week 2025 (Berlin):**  
+> **This repository accompanies our abstract presented at UGH Week 2025 (Antalya):**  
 > *“Natural Language Processing–Based Classification of Bowel Preparation Quality and Its Association with Adenoma Detection in >11,000 Colonoscopy Reports: A Real-World Analysis.”*  
 > **Authors:** Besim Fazıl Ağargün, Sezen Genç Uluçeçen, Gizem Dağcı, Mehmet Akif Yağlı, et al.
 
@@ -148,17 +148,17 @@ If you use this repository in your research, please cite:
 
 **Ağargün BF, Genç Uluçeçen S, Dağcı G, Yağlı MA, et al.**  
 *Natural Language Processing–Based Classification of Bowel Preparation Quality and Its Association with Adenoma Detection in >11,000 Colonoscopy Reports: A Late-Breaking Real-World Analysis.*  
-UEG Week 2025, Berlin.
+UGH Week 2025, Antalya.
 
 ### Example BibTeX
 
 ```bibtex
-@inproceedings{Agargun2025UEG,
+@inproceedings{Agargun2025UGH,
   author    = {Ağargün, Besim Fazıl and Genç Uluçeçen, Sezen and Dağcı, Gizem and Yağlı, Mehmet Akif and et al.},
   title     = {Natural Language Processing--Based Classification of Bowel Preparation Quality and Its Association with Adenoma Detection in >11,000 Colonoscopy Reports: A Late-Breaking Real-World Analysis},
-  booktitle = {UEG Week 2025, Berlin},
+  booktitle = {UGH Week 2025, Antalya},
   year      = {2025},
-  note      = {Late-Breaking Abstract}
+  note      = {Bildiri Kitapçığı}
 }
 ```
 
